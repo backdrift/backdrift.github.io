@@ -1,0 +1,14 @@
+* {
+    background-color: black;    
+    color: white;
+    font-family: MonospaceTypewriter;
+}
+
+ul {
+    list-style-type: square;
+}
+
+button {
+    border: black;
+    margin-bottom: auto;
+}
