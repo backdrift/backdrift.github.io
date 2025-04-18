@@ -12,3 +12,8 @@ button {
     border: black;
     margin-bottom: auto;
 }
+
+h3  {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
