@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "InputMono-Regular";
+    src: url("../../assets/fonts/InputMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aria-Italic";
+    src: url("../../assets/fonts/Arial\ Italic.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF-Compact-Display";
+    src: url("../../assets/fonts/SF-Compact-Display-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../../assets/fonts/Helvetica.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "LucidaGrande";
+    src: url("../../assets/fonts/LucidaGrande.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Helvetica-Oblique";
+    src: url("../../assets/fonts/Helvetica-Oblique.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    /* background: linear-gradient(to right, #9e9880, #648398); */
+    background: #648398;
+    color: black;
+}
+
+
+a {
+    display: block;
+    float: right;
+    margin-left: 50px;
+    margin-bottom: -37px;
+    margin-top: 10px;
+    text-decoration: none;
+    /* color: #ffc55a; */
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-style: inset;
+    font-family: "Aria-Italic";
+}
+
+
+.image-caption {
+    text-align: center;
+    
+}
+
+figcaption {
+    font-size: 10px;
+    font-family: "Helvetica-Oblique";
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 85px;
+}
+
+.play-song {
+    display: flex; /* Makes the items line up in a row by default */
+    gap: 1px;
+    margin-top: 10px;
+    margin-left: 20px; 
+}
+
+.play-button {
+    display: block;
+    /* margin-inline-start: 10px; */
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+}
+
+#playIcon {
+    display: block;
+    /* margin-inline-start: -70px; */
+    /* margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+    position: fixed; */
+}
+
+
+.pause-button {
+    display: block;
+    /* margin-inline-start: 10px; */
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+}
+
+#pauseIcon {
+    display: none;
+    /* margin-inline-start: -79px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+    position: fixed;
+    display: none; */
+}
+
+
+
+
+.header-title {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Aria-Italic";
+}
+
+sub {
+    font-size: 15px;
+    font-family: "Aria-Italic";
+}
+
+
+.album {
+    display: flex; /* Makes the items line up in a row by default */
+    padding-top: 100px;
+    align-content: center;
+    justify-content: center;
+    /* margin-top: 50px;
+    margin-left: -50px;  */
+    /* ^may change this */
+}
+
+
+.tracks {
+    display: block;
+    margin-top: 10px;
+    margin-right: 1px;
+    justify-content: center;
+}
+
+p1 {
+    text-decoration: none;
+    line-height: 40px;
+    font-family: "Aria-Italic";
+}
+
+.album-text {
+    text-align: center;
+    margin-top: 200px;
+}
+
+p {
+    font-family: "Aria-Italic";
+    line-height: 30px;
+}
+
+trk {
+    font-family: "Helvetica-Oblique";
+    line-height: 30px;
+}
+
+
+.gray {
+    display: block;
+    /* margin-left: 400px; */
+
+
+    border: 3px solid #000000;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+
+button {
+    border: black;
+    margin-bottom: auto;
+}
+
+h3 {
+    font-size: medium;
+}

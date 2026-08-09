@@ -1,16 +1,209 @@
-* {
-    background-color: black;    
-    color: white;
-    font-family: MonospaceTypewriter;
+/* Fonts */
+@font-face {
+    font-family: "InputMono-Regular";
+    src: url("/assets/fonts/InputMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
-footer {
+@font-face {
+    font-family: "MonospaceTypewriter-Regular";
+    src: url("/assets/fonts/MonospaceTypewriter.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMonoNerd-Regular";
+    src: url("/assets/fonts/RobotoMonoNerdFont-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../../assets/fonts/Helvetica.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF-Compact-Rounded-Regular";
+    src: url("../../assets/fonts/SF-Compact-Rounded-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+}
+
+
+/* Container for Backdrift logo and album links */
+.header {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    margin: 350px; /*250*/
+}
+
+
+/* Backdrift logo */
+.backdrift-logo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* Album links container */
+.album-links {
+    text-align: center;
+    font-size: 17px;
+
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    /* or use: grid-template-columns: repeat(9, auto); */
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-links span {
+    text-align: center;
+    width: 30px; /* Fixed width for consistent alignment */
+}
+
+
+/* Album link text */
+a {
+    text-decoration: none;
+    color: rgb(181, 181, 181);
+    font-family: "MonospaceTypewriter-Regular";
+}
+
+/* When hovering over album link text */
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Bottom text */
+p1 {
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    font-family: "InputMono-Regular";
+}
+
+/* Bottom text container */
+.bottom-text {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+/* footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 125px;
-}
+} */
 
 ul {
     list-style-type: square;
+}
+
+
+/* UI for music player */
+#current_song {
+    position: fixed;
+    top: 15px;
+    left: 130px;
+    background: rgb(46, 46, 46);
+    border-radius: 10px;
+    color: white;
+    border-color: #ff5500;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    
+    font-family: "InputMono-Regular";
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#playIcon {
+    position: fixed;
+    top: 15px;
+    left: 70px;
+    background: rgb(46, 46, 46);
+    border-color: #a9a9a9;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+#pauseIcon {
+    position: fixed;
+    top: 15px;
+    left: 70px;
+    background: rgb(46, 46, 46);
+    border-color: #a9a9a9;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+#nextIcon {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: rgb(46, 46, 46);
+    border-color: #a9a9a9;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+
+.links {
+    /* margin-left: 1345px;
+    margin-top: -675px; */
+    top: 0;
+    right: 0;
+    padding: 15px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
 }

@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "InputMono-Regular";
+    src: url("../../assets/fonts/InputMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aria-Italic";
+    src: url("../../assets/fonts/Arial\ Italic.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bodoni72-Regular";
+    src: url("../../assets/fonts/Bodoni72-Regular.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bodoni72-Italic";
+    src: url("../../assets/fonts/Bodoni72-Italic.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Helvetica-Oblique";
+    src: url("../../assets/fonts/Helvetica-Oblique.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Times-New-Roman-Italic";
+    src: url("../../assets/fonts/Times-New-Roman-Italic.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    /* background: linear-gradient(to right, #9e9880, #648398); */
+    background: #565757;
+    color: black;
+    /* background-image: url("../../assets/images/dread_cover.JPG");
+    background-repeat: no-repeat;
+    background-position: center; */
+
+}
+
+
+a {
+    display: block;
+    float: right;
+    margin-left: 50px;
+    margin-bottom: -37px;
+    margin-top: 10px;
+    text-decoration: none;
+    /* color: #ffc55a; */
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-style: inset;
+    font-family: "Aria-Italic";
+}
+
+
+.header-title {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Times-New-Roman-Italic";
+    color: #ffffff;
+}
+
+sub {
+    font-size: 15px;
+    font-family: "Aria-Italic";
+    color: #ffffff;
+}
+
+
+.album {
+    display: flex; /* Makes the items line up in a row by default */
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: -50px; /* may change this */
+}
+
+
+img {
+    margin-top: 0px;
+}
+
+
+.tracks {
+    display: block;
+    margin-top: 15px;
+    margin-right: 1px;
+    justify-content: center;
+}
+
+p1 {
+    text-decoration: none;
+    line-height: 40px;
+    font-family: "Helvetica-Oblique";
+    color: #ffffff;
+}
+
+
+.dread {
+    display: block;
+    margin-left: 400px;
+    border: 3px solid #000000;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+
+button {
+    border: black;
+    margin-bottom: auto;
+}
+
+h3 {
+    font-size: medium;
+}
+
+
+
+.play-song {
+    display: flex; /* Makes the items line up in a row by default */
+    gap: 1px;
+    margin-top: 100px;
+    margin-left: -70px; 
+}
+
+.play-button {
+    display: block;
+    /* margin-inline-start: 10px; */
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+}
+
+#playIcon {
+    display: block;
+    /* margin-inline-start: -70px; */
+    /* margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+    position: fixed; */
+}
+
+
+.pause-button {
+    display: block;
+    /* margin-inline-start: 10px; */
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+}
+
+#pauseIcon {
+    display: none;
+    /* margin-inline-start: -79px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-style: outset;
+    position: fixed;
+    display: none; */
+}
+
+
+
+
+/* * {
+    background-color: white;
+    color: blue;
+    font-family: MonospaceTypewriter;
+} */
+
+ul {
+    list-style-type: square;
+}
+
+button {
+    border: black;
+    margin-bottom: auto;
+}
+
+h3 {
+    font-size: medium;
+}

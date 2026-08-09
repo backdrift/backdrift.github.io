@@ -1,53 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backdrift - Official</title>
-    <link rel="icon" type="image/x-icon" href="bd.ico">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section id="home" class="section">
-        <div class="content">
-            <h1>Backdrift</h1>
-            <p></p>
-        </div>
-    </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Backdrift</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/bd.ico" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-    <section id="releases" class="section">
-        <div class="content">
-            <h2>Releases</h2>
-            <ul>
-                <li><a href="grey.html">Grey</a></li>
-                <li><a href="lim.html">Lim</a></li>
-                <li><a href="suburbia.html">Suburbia</a></li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="contact" class="section">
-        <div class="content">
-            <h2>Contact</h2>
-            <p><a href="mailto:backdrift00@gmail.com">backdrift00@gmail.com</a></p>
-        </div>
-    </section>
+<div class="header">
 
-    <section id="links" class="section">
-        <div class="content">
-            <h2>Links</h2>
-            <p><a href="https://open.spotify.com/artist/653bm76WndUI0wIys9eaQE?si=H3sKWmLuShWmPOdlhhPtpA" target="_blank">Spotify</a></p>
-            <p><a href="https://music.apple.com/us/artist/backdrift/1693556894" target="_blank">Apple</a></p>
-            <p><a href="https://www.youtube.com/@backdrifting" target="_blank">YouTube</a></p>
-            <p><a href="https://soundcloud.com/backdrifted" target="_blank">SoundCloud</a></p>
-            <p><a href="https://backdrifting.bandcamp.com/" target="_blank">Bandcamp</a></p>
-        </div>
-    </section>
-<!-- 
+    <div class="header-title">
+        <!-- <p>Backdrift</p> -->
+        <img src="assets/images/backdrift.png" width="150" height="150" alt="Backdrift" class="backdrift-logo">
+    </div>
+
+    <div class="album-links">
+        <a href="releases/gray.html">Gray</a>
+        <span>|</span>
+        <a href="releases/lim.html">Lim</a>
+        <span>|</span>
+        <a href="releases/suburbia.html">Suburbia</a>
+        <span>|</span>
+        <a href="releases/empty.html">Empty</a>
+        <span>|</span> <br>
+        <a href="releases/dread.html">Dread</a>
+    </div>
+
+    <div class="bottom">
+        <p1 class="bottom-text">All of my music is free to use by anybody. All I ask is for credit, but I guess you don't have to.</p>
+    </div>
+
+
+    <!-- Music Player -->
+    <button id="play" onclick="playShuffle()">
+        <img id="playIcon" src="assets/images/buttons/play.png" alt="Play">
+    </button>
+    
+    <button id="pause" onclick="pauseAudio()">
+        <img id="pauseIcon" src="assets/images/buttons/pause.png" alt="Pause" style="display:none;">
+    </button>
+
+    <button id="next" onclick="skipForward()">
+        <img id="nextIcon" src="assets/images/buttons/next.png" alt="Next">
+    </button>
+
+    <a id="album_link" href="releases/">
+        <button id="current_song"></button>
+    </a>
+
+    <script src="js/player.js"></script>
+
+</div>
+
+<div class="links">
+
+        <a href="https://open.spotify.com/artist/653bm76WndUI0wIys9eaQE?si=dPh8u66NTOWq1KfV0g7anQ" target="_blank">
+            <img src="assets/images/logos/spotify.png" style="width:20px; height:auto;" alt="Spotify" class="spotify">
+        </a>
+
+        <a href="https://music.apple.com/us/artist/backdrift/1693556894" target="_blank">
+            <img src="assets/images/logos/apple.png" style="width:20px; height:auto;" alt="Apple" class="apple">
+        </a>
+
+        <a href="https://www.youtube.com/@backdrifting" target="_blank">
+        <img src="assets/images/logos/youtube.png" style="width:20px; height:auto;" alt="YouTube" class="youtube">
+        </a>
+
+        <a href="https://backdrifting.bandcamp.com/" target="_blank">
+        <img src="assets/images/logos/bandcamp.png" style="width:20px; height:auto;" alt="BandCamp" class="bandcamp">
+        </a>
+
+        <a href="https://soundcloud.com/backdrifted" target="_blank">
+        <img src="assets/images/logos/soundcloud.png" style="width:20px; height:auto;" alt="SoundCloud" class="soundcloud">
+        </a>
+
+    </div>
+
+
+<!--     
+    <body>
+        <section id="home" class="section">
+            <div class="content">
+                <h1>Backdrift</h1>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="releases" class="section">
+            <div class="content">
+                <h2>Releases</h2>
+                <ul>
+                    <li><a href="grey.html">Grey</a></li>
+                    <li><a href="lim.html">Lim</a></li>
+                    <li><a href="suburbia.html">Suburbia</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content">
+                <h2>Contact</h2>
+                <p>
+                    <a href="mailto:backdrift00@gmail.com"
+                        >backdrift00@gmail.com</a
+                    >
+                </p>
+            </div>
+        </section>
+
+        <section id="links" class="section">
+            <div class="content">
+                <h2>Links</h2>
+                <p>
+                    <a
+                        href="https://open.spotify.com/artist/653bm76WndUI0wIys9eaQE?si=H3sKWmLuShWmPOdlhhPtpA"
+                        target="_blank"
+                        >Spotify</a
+                    >
+                </p>
+                <p>
+                    <a
+                        href="https://music.apple.com/us/artist/backdrift/1693556894"
+                        target="_blank"
+                        >Apple</a
+                    >
+                </p>
+                <p>
+                    <a
+                        href="https://www.youtube.com/@backdrifting"
+                        target="_blank"
+                        >YouTube</a
+                    >
+                </p>
+                <p>
+                    <a href="https://soundcloud.com/backdrifted" target="_blank"
+                        >SoundCloud</a
+                    >
+                </p>
+                <p>
+                    <a href="https://backdrifting.bandcamp.com/" target="_blank"
+                        >Bandcamp</a
+                    >
+                </p>
+            </div>
+        </section>
+
     <footer>
         <p>&copy; 2025 Aemlyflow</p>
-        <p>&#x2117; 2025 Aemlyflow</p>  
+        <p>&#x2117; 2025 Aemlyflow</p>
         <p>All rights reserved.</p>
     </footer> -->
-</body>
+
 </html>
