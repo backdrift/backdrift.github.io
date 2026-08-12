@@ -8,28 +8,28 @@
 
 @font-face {
     font-family: "MonospaceTypewriter-Regular";
-    src: url("/assets/fonts/MonospaceTypewriter.woff2") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/MonospaceTypewriter.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoMonoNerd-Regular";
-    src: url("/assets/fonts/RobotoMonoNerdFont-Regular.woff2") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/RobotoMonoNerdFont-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Helvetica";
-    src: url("../../assets/fonts/Helvetica.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Helvetica.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SF-Compact-Rounded-Regular";
-    src: url("../../assets/fonts/SF-Compact-Rounded-Regular.woff2") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/SF-Compact-Rounded-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -88,9 +88,14 @@ a {
 
 /* When hovering over album link text */
 a:hover {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
 }
 
+.link-gray:hover { color: #d4e47a; }
+.link-lim:hover { color: #03ff3a; }
+.link-suburbia:hover { color: #5379ca; }
+.link-empty:hover { color: #f18fed; }
+.link-dread:hover { color: #474747; }
 
 
 /* Bottom text */
@@ -207,3 +212,54 @@ button {
     display: flex;
     gap: 10px;
 }
+
+
+/* Prevent scrollbars and style the background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+/* 1. Make the container fill the entire viewport */
+.af-logo {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 2. Apply separate animations for X and Y axes to ensure a realistic bounce */
+#bouncing-logo {
+  position: absolute;
+  background-color: transparent !important;
+  
+  /* Use 'calc' to subtract the image size (300px width/approx height) from the total viewport size */
+  animation: 
+    bounceX 15s linear infinite alternate, 
+    bounceY 12s linear infinite alternate;
+}
+
+/* Horizontal movement */
+@keyframes bounceX {
+  0% {
+    left: -5vw;
+  }
+  100% {
+    left: calc(105vw - 300px); /* Adjust 300px if you change the image width */
+  }
+}
+
+/* Vertical movement */
+@keyframes bounceY {
+  0% {
+    top: -20vh;
+  }
+  100% {
+    /* Adjust 100px based on your logo's natural scaled height */
+    top: calc(-105vh - 100px); 
+  }
+}
+
+

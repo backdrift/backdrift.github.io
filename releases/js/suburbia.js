@@ -1,6 +1,6 @@
 const suburbia_songs = [
   "../../assets/audio/releases/suburbia/1_A Coming Of Age Story.mp3",
-  "../../assets/audio/releases/suburbia/2_A Day To Remember.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/2_A Day To Remember.mp3",
   "../../assets/audio/releases/suburbia/3_Lark.mp3",
   "../../assets/audio/releases/suburbia/4_Long Shot.mp3",
   "../../assets/audio/releases/suburbia/5_Before It Happened.mp3",

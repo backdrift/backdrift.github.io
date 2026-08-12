@@ -1,12 +1,12 @@
 const gray_songs = [
-  "../../assets/audio/releases/gray/1_7.mp3",
-  "../../assets/audio/releases/gray/2_the day before.mp3",
-  "../../assets/audio/releases/gray/3_Enol.mp3",
-  "../../assets/audio/releases/gray/4_Mirrors.mp3",
-  "../../assets/audio/releases/gray/5_Monoamine.mp3",
-  "../../assets/audio/releases/gray/6_Poly.mp3",
-  "../../assets/audio/releases/gray/7_Memories.mp3",
-  "../../assets/audio/releases/gray/8_Waiting.mp3"]
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/1_7.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/2_the day before.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/3_Enol.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/4_Mirrors.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/5_Monoamine.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/6_Poly.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/7_Memories.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/8_Waiting.mp3"]
 
 let audio = new Audio();
 let isPlaying = false
@@ -71,11 +71,11 @@ function updatePlayPauseIcons(song_id) {
     // playIcon.style.display = "none";
     // pauseIcon.style.display = "inline";
     // playIcon.src = "../assets/images/buttons/pause.png"
-    playIcon.setAttribute('src', "../assets/images/buttons/pause.png")
+    playIcon.setAttribute('src', "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/images/buttons/pause.png")
   } else {
     // playIcon.style.display = "inline";
     // pauseIcon.style.display = "none";
     // playIcon.src = "../assets/images/buttons/play.png"
-    playIcon.setAttribute('src', "../assets/images/buttons/play.png")
+    playIcon.setAttribute('src', "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/images/buttons/play.png")
   }
 }

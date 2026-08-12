@@ -1,39 +1,39 @@
 const all_songs = [
-  "assets/audio/releases/gray/1_7.mp3",
-  "assets/audio/releases/gray/2_the day before.mp3",
-  "assets/audio/releases/gray/3_Enol.mp3",
-  "assets/audio/releases/gray/4_Mirrors.mp3",
-  "assets/audio/releases/gray/5_Monoamine.mp3",
-  "assets/audio/releases/gray/6_Poly.mp3",
-  "assets/audio/releases/gray/7_Memories.mp3",
-  "assets/audio/releases/gray/8_Waiting.mp3",
-  "assets/audio/releases/lim/1_as time passes us by.mp3",
-  "assets/audio/releases/lim/2_Racks.mp3",
-  "assets/audio/releases/lim/3_2031.mp3",
-  "assets/audio/releases/lim/4_X.mp3",
-  "assets/audio/releases/lim/5_Obscured.mp3",
-  "assets/audio/releases/lim/6_Sometimes, Goodtimes.mp3",
-  "assets/audio/releases/lim/7_IZA.mp3",
-  "assets/audio/releases/lim/8_3D Sandbox.mp3",
-  "assets/audio/releases/lim/9_Computers.mp3",
-  "assets/audio/releases/lim/10_808dance.mp3",
-  "assets/audio/releases/lim/11_By the time you came back.mp3",
-  "assets/audio/releases/lim/12_They Forgot You.mp3",
-  "assets/audio/releases/suburbia/1_A Coming Of Age Story.mp3",
-  "assets/audio/releases/suburbia/2_A Day To Remember.mp3",
-  "assets/audio/releases/suburbia/3_Lark.mp3",
-  "assets/audio/releases/suburbia/4_Long Shot.mp3",
-  "assets/audio/releases/suburbia/5_Before It Happened.mp3",
-  "assets/audio/releases/suburbia/6_Around The Neighborhood.mp3",
-  "assets/audio/releases/suburbia/7_After It Happened.mp3",
-  "assets/audio/releases/suburbia/8_Everything Is Fine.mp3",
-  "assets/audio/releases/suburbia/9_Traffic Noise.mp3",
-  "assets/audio/releases/suburbia/10_The End.mp3",
-  "assets/audio/releases/empty/1_Null.mp3",
-  "assets/audio/releases/empty/2_Winds.mp3",
-  "assets/audio/releases/empty/3_Every Second.mp3",
-  "assets/audio/releases/empty/4_Artificial.mp3",
-  "assets/audio/releases/empty/5_Waiting2.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-asset/srefs/heads/main/audio/releases/gray/1_7.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/2_the day before.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/3_Enol.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/4_Mirrors.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/5_Monoamine.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/6_Poly.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/7_Memories.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/gray/8_Waiting.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/1_as time passes us by.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/2_Racks.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/3_2031.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/4_X.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/5_Obscured.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/6_Sometimes, Goodtimes.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/7_IZA.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/8_3D Sandbox.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/9_Computers.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/10_808dance.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/11_By the time you came back.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/12_They Forgot You.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/1_A Coming Of Age Story.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/2_A Day To Remember.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/3_Lark.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/4_Long Shot.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/5_Before It Happened.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/6_Around The Neighborhood.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/7_After It Happened.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/8_Everything Is Fine.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/9_Traffic Noise.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/suburbia/10_The End.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/empty/1_Null.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/empty/2_Winds.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/empty/3_Every Second.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/empty/4_Artificial.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/empty/5_Waiting2.mp3",
 ];
 
 let audio = new Audio();
@@ -48,7 +48,7 @@ function playShuffle()
 {
   if (!isPlaying) 
     {
-      if (!audio.src) 
+      if (!audio.src)
       {
         // If all songs have been played, reset the list
         if (playedSongs.length === all_songs.length) {
@@ -153,7 +153,7 @@ function getCurrentSong() {
         "Computers",
         "808dance",
         "By the time you came back...",
-        "They Forgot You",
+        "They Forgot You"
   ];
 
   const suburbia = [
@@ -178,9 +178,9 @@ function getCurrentSong() {
   ];
 
   // split into parts by "/"
-  const parts = all_songs[currentIndex].split("/"); 
-  const album = parts[3];                 // "gray"
-  const fileName = parts[4];              // "1_7.mp3"
+  const parts = all_songs[currentIndex].split("/");
+  const album = parts[11];                 // "gray"
+  const fileName = parts[12];              // "1_7.mp3"
 
   const parts2 = fileName.split("_"); 
   const n = parts2[0];
@@ -190,7 +190,7 @@ function getCurrentSong() {
   const track = parts3[0];
 
   const newImage = document.createElement('img');
-  newImage.src = "assets/images/" + album + "_cover.jpg";
+  newImage.src = "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/images/album_covers/" + album + ".jpg";
   newImage.alt = album + " cover";
   newImage.style.width = "20px";  // make smaller
   newImage.style.height = "auto";
