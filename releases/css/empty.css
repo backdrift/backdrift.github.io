@@ -1,20 +1,20 @@
 @font-face {
     font-family: "InputMono-Regular";
-    src: url("../../assets/fonts/InputMono-Regular.woff2") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/InputMono-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Aria-Italic";
-    src: url("../../assets/fonts/Arial\ Italic.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Arial\ Italic.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Iosevka-Regular";
-    src: url("../../assets/fonts/Iosevka-Regular.ttc") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Iosevka-Regular.ttc") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: "Helvetica-Oblique";
-    src: url("../../assets/fonts/Helvetica-Oblique.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Helvetica-Oblique.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -82,7 +82,7 @@ img {
 
 .tracks {
     display: block;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-right: 1px;
     justify-content: center;
 }

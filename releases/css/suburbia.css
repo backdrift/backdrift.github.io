@@ -1,27 +1,27 @@
 @font-face {
     font-family: "InputMono-Regular";
-    src: url("../../assets/fonts/InputMono-Regular.woff2") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/InputMono-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Aria-Italic";
-    src: url("../../assets/fonts/Arial\ Italic.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Arial\ Italic.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bodoni72-Regular";
-    src: url("../../assets/fonts/Bodoni72-Regular.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Bodoni72-Regular.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bodoni72-Italic";
-    src: url("../../assets/fonts/Bodoni72-Italic.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Bodoni72-Italic.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +29,7 @@
 
 @font-face {
     font-family: "Helvetica-Oblique";
-    src: url("../../assets/fonts/Helvetica-Oblique.ttf") format("woff2");
+    src: url("https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/fonts/Helvetica-Oblique.ttf") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -98,8 +98,7 @@ img {
 p1 {
     text-decoration: none;
     line-height: 40px;
-    font-family: "Bodoni72-Regular";
-    font-weight: bold;
+    font-family: "Helvetica-Oblique";
 }
 
 
