@@ -1,17 +1,17 @@
 const lim_songs = [
-  "../../assets/audio/releases/lim/1_as time passes us by.mp3",
-  "../../assets/audio/releases/lim/2_Racks.mp3",
-  "../../assets/audio/releases/lim/3_2031.mp3",
-  "../../assets/audio/releases/lim/4_X.mp3",
-  "../../assets/audio/releases/lim/5_Obscured.mp3",
-  "../../assets/audio/releases/lim/6_Sometimes, Goodtimes.mp3",
-  "../../assets/audio/releases/lim/7_IZA.mp3",
-  "../../assets/audio/releases/lim/8_3D Sandbox.mp3",
-  "../../assets/audio/releases/lim/9_Computers.mp3",
-  "../../assets/audio/releases/lim/10_808dance.mp3",
-  "../../assets/audio/releases/lim/11_By the time you came back.mp3",
-  "../../assets/audio/releases/lim/12_They Forgot You.mp3",
-  "../../assets/audio/releases/lim/13_Just Dance (remix).mp3"
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/1_as time passes us by.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/2_Racks.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/3_2031.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/4_X.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/5_Obscured.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/6_Sometimes, Goodtimes.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/7_IZA.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/8_3D Sandbox.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/9_Computers.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/10_808dance.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/11_By the time you came back.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/12_They Forgot You.mp3",
+  "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/audio/releases/lim/13_Just Dance (remix).mp3"
 ]
 
 let audio = new Audio();
@@ -77,11 +77,30 @@ function updatePlayPauseIcons(song_id) {
     // playIcon.style.display = "none";
     // pauseIcon.style.display = "inline";
     // playIcon.src = "../assets/images/buttons/pause.png"
-    playIcon.setAttribute('src', "../assets/images/buttons/pause.png")
+    playIcon.setAttribute('src', "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/images/buttons/pause.png")
   } else {
     // playIcon.style.display = "inline";
     // pauseIcon.style.display = "none";
     // playIcon.src = "../assets/images/buttons/play.png"
-    playIcon.setAttribute('src', "../assets/images/buttons/play.png")
+    playIcon.setAttribute('src', "https://media.githubusercontent.com/media/backdrift/backdrift-assets/refs/heads/main/images/buttons/play.png")
   }
+}
+
+
+function downloadSong(button) {
+    const url = button.getAttribute('data-url');
+    const filename = button.getAttribute('data-name');
+    
+    fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(link.href);
+        })
+        .catch(error => console.error('Download failed:', error));
 }
